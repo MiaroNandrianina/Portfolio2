@@ -160,7 +160,8 @@
         <section class="px-16 py-4 bg-[#0F172A] w-full" id="Project">
             <div>
                 <h2 class="text-4xl text-white font-poppins py-2">myProjects</h2>
-                <h3 class="text-2xl text-white"><b>Nb:</b>les exercices sont encore statiques, mais ils sont en phase d'apprentissage</h3>
+                <h3 class="text-2xl text-white"><b>Nb:</b>les exercices sont encore statiques, mais ils sont en phase
+                    d'apprentissage</h3>
             </div>
 
             <div class="py-8 flex justify-between flex-col gap-4 md:flex-row">
@@ -243,11 +244,12 @@
         </section>
         <!-- ..................................................Education........................ -->
         <section class="px-16 py-4 bg-[#0F172A] w-full" id="Education">
-            <div>
+            <!-- <div>
                 <h2 class="text-4xl text-white font-poppins">myEducation</h2>
-            </div>
+            </div> -->
 
-            <div class="py-16 flex justify-between flex-col gap-4 overflow-x-hidden">
+            <!-- <div class="py-16 flex justify-between flex-col gap-4 overflow-x-hidden">
+
                 <div class="card p-4 bg-[#838383] backdrop-blur-[10px] bg-white/20  lg:card-side bg-base-100 shadow-sm"
                     data-aos="fade-right">
                     <figure>
@@ -288,7 +290,71 @@
                         <p class="text-white text-lg">2022-2023</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="px-4 py-10 max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold text-white font-poppins text-center mb-10">myEducation</h2>
+
+                <ul class="timeline timeline-vertical">
+                    <li>
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-5 w-5 text-[#00e239]">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-start md:text-end mb-10 px-2" data-aos="fade-left">
+                            <time class="font-mono italic text-lg text-white">2026</time>
+                            <div class="text-2xl font-black text-white">Formation Dev web</div>
+                            <p class="text-gray-600">Let's Code Formation</p>
+                        </div>
+                        <hr class="bg-[#00e239]" />
+                    </li>
+
+                    <li>
+                        <hr class="bg-[#00e239]" />
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-5 w-5 text-[#00e239]">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-end mb-10 px-2" data-aos="fade-right">
+                            <time class="font-mono italic text-lg text-white">2024-2025</time>
+                            <div class="flex items-center gap-4">
+                                <img src="public/image/LOGO-ESM.gif" alt="ESM"
+                                    class="w-12 h-12 object-contain hidden md:block" />
+                                <div>
+                                    <div class="text-2xl font-black text-white">DTS en Multimédia</div>
+                                    <p class="text-gray-600">Ecole Supérieure de Multimédia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="bg-[#00e239]" />
+                    </li>
+
+                    <li>
+                        <hr class="bg-[#00e239]" />
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="h-5 w-5 text-[#00e239]">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-start md:text-end mb-10 px-2" data-aos="fade-left">
+                            <time class="font-mono italic text-lg text-white">2022-2023</time>
+                            <div class="text-2xl font-black text-white">Bacc Série A2</div>
+                            <p class="text-gray-600">FJKM Sekoly Sedera Amboniloha</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
+
         </section>
         <!-- ................................................section contact......................... -->
         <section class="px-16 py-4" id="Contact">
@@ -325,7 +391,7 @@
                                     <label class="label  text-white">Email</label>
                                     <input type="email"
                                         class="input w-full mb-8 p-6  bg-[#1e293b] shadow-xl/30 border-white text-white"
-                                        placeholder="Email" id="email" required/>
+                                        placeholder="Email" id="email" required />
 
                                     <label class="label  text-white">Password</label>
                                     <input type="password"
