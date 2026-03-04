@@ -18,16 +18,17 @@
 <body>
     <header class="sticky top-0 left-0 z-[1200]">
         <section>
-            <div class="navbar bg-[#0F172A] dark:bg-white shadow-lg p-8 justify-between items-center flex-col gap-4 md:flex-row">
+            <div
+                class="navbar bg-[#0F172A] dark:bg-white shadow-lg p-8 justify-between items-center flex-col gap-4 md:flex-row">
                 <div class="flex-1">
-                    <div class="avatar" data-aos="zoom-out" data-aos-duration="2500">
+                    <div class="avatar">
                         <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
                             <img src="public/image/Snapchat-1627605761.jpg" />
                         </div>
                     </div>
                 </div>
 
-                <div class="flex-none">
+                <div class="flex-none ml-16">
                     <ul class="flex justify-center items-center gap-4 md:gap-8">
                         <li><a href="#About" class="text-white text-lg font-poppins font-semibold">About</a></li>
                         <li><a href="#Skills" class="text-white text-lg font-poppins font-semibold">Skills</a></li>
@@ -158,11 +159,13 @@
         <!--..................................................Myprojects........................... -->
         <section class="px-16 py-4 bg-[#0F172A] w-full" id="Project">
             <div>
-                <h2 class="text-4xl text-white font-poppins">myProjects</h2>
+                <h2 class="text-4xl text-white font-poppins py-2">myProjects</h2>
+                <h3 class="text-2xl text-white"><b>Nb:</b>les exercices sont encore statiques, mais ils sont en phase d'apprentissage</h3>
             </div>
 
             <div class="py-8 flex justify-between flex-col gap-4 md:flex-row">
-                <div class="flex-1 card  bg-[#838383] backdrop-blur-[10px] bg-white/20 shadow-sm" data-aos="zoom-out">
+                <div class="flex-1 card  bg-[#838383] backdrop-blur-[10px] bg-white/20 shadow-sm" data-aos="zoom-out"
+                    data-aos-delay="300">
                     <div class="card-body">
                         <h4 class="card-title text-3xl text-lime-500">Intégration Landing Page</h4>
                         <p class="text-lg text-white">
@@ -179,7 +182,8 @@
                     </div>
                 </div>
 
-                <div class="flex-1 card  bg-[#838383] backdrop-blur-[10px] bg-white/20 shadow-sm" data-aos="zoom-out">
+                <div class="flex-1 card  bg-[#838383] backdrop-blur-[10px] bg-white/20 shadow-sm" data-aos="zoom-out"
+                    data-aos-delay="200">
                     <div class="card-body">
                         <h4 class="card-title  text-3xl text-lime-500">Intégration avec Css/Sass</h4>
                         <p class="text-lg text-white">
@@ -201,7 +205,8 @@
 
 
             <div class="flex justify-between flex-col gap-4 md:flex-row">
-                <div class="flex-1 card  bg-[#838383] backdrop-blur-[10px] bg-white/20 shadow-sm" data-aos="zoom-out">
+                <div class="flex-1 card  bg-[#838383] backdrop-blur-[10px] bg-white/20 shadow-sm" data-aos="zoom-out"
+                    data-aos-delay="100">
                     <div class="card-body">
                         <h4 class="card-title  text-3xl text-lime-500">Intégration maquette avec bootstrap</h4>
                         <p class="text-lg text-white">
@@ -320,7 +325,7 @@
                                     <label class="label  text-white">Email</label>
                                     <input type="email"
                                         class="input w-full mb-8 p-6  bg-[#1e293b] shadow-xl/30 border-white text-white"
-                                        placeholder="Email" />
+                                        placeholder="Email" id="email" required/>
 
                                     <label class="label  text-white">Password</label>
                                     <input type="password"
@@ -383,11 +388,18 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        // Ampiasao function mivantana mba hamaritana ny halavan'ny ecran
+        AOS.init({
+            disable: function () {
+                var maxWidth = 768;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
     </script>
 
 
-    <script src="javascript.js"></script>
+    <script src="public/js/javascript.js"></script>
 </body>
 
 </html>
