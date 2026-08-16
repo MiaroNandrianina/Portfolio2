@@ -35,79 +35,79 @@ function verificationInput() {
             darkMode.innerHTML="on"
         }
     })
-    togglePassword.addEventListener("click",() =>{
-        if (password.type ==="password") {
-            password.type="text"
-            togglePassword.classList.replace("fa-eye" ,"fa-eye-slash")
-        }else{
-            password.type="password"
-            togglePassword.classList.replace("fa-eye-slash","fa-eye")
-        }
-    })
-    password.addEventListener("input",() =>{
-        let refyPassword =password.value.length
+    // togglePassword.addEventListener("click",() =>{
+    //     if (password.type ==="password") {
+    //         password.type="text"
+    //         togglePassword.classList.replace("fa-eye" ,"fa-eye-slash")
+    //     }else{
+    //         password.type="password"
+    //         togglePassword.classList.replace("fa-eye-slash","fa-eye")
+    //     }
+    // })
+    // password.addEventListener("input",() =>{
+    //     let refyPassword =password.value.length
     
-        if (refyPassword  > 0 && refyPassword < 4) {
-            affichage.innerHTML = "faible"
-            affichage.style.color="red"
-            password.style.borderColor="red"
-        }else if (refyPassword >=4 && refyPassword <6 ) {
-            password.style.borderColor="yellow"
-            affichage.style.color="yellow"
-            affichage.innerHTML ="moyenne"
-        }else if (refyPassword >=6 ) {
-            password.style.borderColor="green"
-            affichage.innerHTML ="forte"
-            affichage.style.color="green"
-        }else{
-             password.style.borderColor=""
-            affichage.innerHTML=""
-        }
-    })
+    //     if (refyPassword  > 0 && refyPassword < 4) {
+    //         affichage.innerHTML = "faible"
+    //         affichage.style.color="red"
+    //         password.style.borderColor="red"
+    //     }else if (refyPassword >=4 && refyPassword <6 ) {
+    //         password.style.borderColor="yellow"
+    //         affichage.style.color="yellow"
+    //         affichage.innerHTML ="moyenne"
+    //     }else if (refyPassword >=6 ) {
+    //         password.style.borderColor="green"
+    //         affichage.innerHTML ="forte"
+    //         affichage.style.color="green"
+    //     }else{
+    //          password.style.borderColor=""
+    //         affichage.innerHTML=""
+    //     }
+    // })
     
-    togglePassworddeux.addEventListener("click",() => {
-          if (validation.type ==="password") {
-            validation.type="text"
-            togglePassworddeux.classList.replace("fa-eye" ,"fa-eye-slash")
-        }else{
-            validation.type="password"
-            togglePassworddeux.classList.replace("fa-eye-slash","fa-eye")
-        }
-    })
-    password.addEventListener("input",() =>{
-        let a =password.value
-        let b=validation.value
+    // togglePassworddeux.addEventListener("click",() => {
+    //       if (validation.type ==="password") {
+    //         validation.type="text"
+    //         togglePassworddeux.classList.replace("fa-eye" ,"fa-eye-slash")
+    //     }else{
+    //         validation.type="password"
+    //         togglePassworddeux.classList.replace("fa-eye-slash","fa-eye")
+    //     }
+    // })
+    // password.addEventListener("input",() =>{
+    //     let a =password.value
+    //     let b=validation.value
     
-        if (a ===b && a!=="") {
-            affichagedeux.innerHTML ="password correct"
-             affichagedeux.style.color ="green"
-            validation.style.borderColor="green"
+    //     if (a ===b && a!=="") {
+    //         affichagedeux.innerHTML ="password correct"
+    //          affichagedeux.style.color ="green"
+    //         validation.style.borderColor="green"
     
-        }else if (b!=="") {
-            affichagedeux.innerHTML="password incorrecte"
-             affichagedeux.style.color ="red"
-            validation.style.borderColor="red"
-        }else{
-            affichagedeux.innerHTML=""
-        }
-    })
-    validation.addEventListener("input",() => {
-        let a =password.value
-        let b=validation.value
+    //     }else if (b!=="") {
+    //         affichagedeux.innerHTML="password incorrecte"
+    //          affichagedeux.style.color ="red"
+    //         validation.style.borderColor="red"
+    //     }else{
+    //         affichagedeux.innerHTML=""
+    //     }
+    // })
+    // validation.addEventListener("input",() => {
+    //     let a =password.value
+    //     let b=validation.value
         
-        if (a ===b && a!=="") {
-            affichagedeux.innerHTML ="password correct"
-            affichagedeux.style.color ="green"
-            validation.style.borderColor="green"
+    //     if (a ===b && a!=="") {
+    //         affichagedeux.innerHTML ="password correct"
+    //         affichagedeux.style.color ="green"
+    //         validation.style.borderColor="green"
     
-        }else if (b!=="") {
-            affichagedeux.innerHTML="password incorrecte"
-             affichagedeux.style.color ="red"
-            validation.style.borderColor="red"
-        }else{
-            affichagedeux.innerHTML=""
-        }
-    })
+    //     }else if (b!=="") {
+    //         affichagedeux.innerHTML="password incorrecte"
+    //          affichagedeux.style.color ="red"
+    //         validation.style.borderColor="red"
+    //     }else{
+    //         affichagedeux.innerHTML=""
+    //     }
+    // })
 }
 verificationInput()
 
