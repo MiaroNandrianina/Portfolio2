@@ -1,3 +1,20 @@
 .hero{
     transition: all 0.5s ease-in;
 }
+.flex-perfomance{
+    display: flex;
+    gap: 1.5rem;
+    animation: animation-left 35s linear infinite;
+    width: max-content;
+}
+.flex-perfomance:hover {
+    animation-play-state: paused;
+}
+@keyframes animation-left {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-500vw);
+    }
+}
